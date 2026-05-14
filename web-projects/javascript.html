@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Light Switch</h1>
+    <p>Click the buttons to turn the light on and off.</p>
+    <script>
+        function bulbon() {
+            document.getElementById("myImage").src = "bulbon.jfif";
+        }
+        function bulboff() {
+            document.getElementById("myImage").src = "bulboff.jfif";
+        }
+    </script>
+    <button onclick="bulbon()">Turn on the light</button>
+
+<img id="myImage" src="bulboff.jfif" style="width:500px">
+
+<button onclick="bulboff()">Turn off the light</button>
+
+</body>
+</html>

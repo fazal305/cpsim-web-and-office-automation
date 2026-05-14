@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Attribute Example</title>
+</head>
+<body>
+     <a href="garden salad.jfif">Visit Garden Salad</a>
+<div id="container"><p id="text">Hello, World!</p></div>
+<button onclick="example()">Click Me</button>
+    <script>
+// let result = document.querySelector('a')
+// let url = result.getAttribute('href');
+// console.log(url);
+//   let result = document.querySelector('a')
+//     result.setAttribute('href', 'https://www.google.com');
+//     let data = result.getAttribute('href');
+//     console.log(data);
+function example() {
+//     let contain = document.querySelector('#container');
+//     let txt = document.getElementById('text');
+//     let append1 = document.createElement('p');
+//     append1.textContent = 'This is a new paragraph.';
+//     contain.append(append1);
+//     let append2 = document.createElement('p');
+//     append2.textContent = 'This is another new paragraph.';
+//     contain.append(append2);
+let contain = document.querySelector('#container');
+let txt = document.getElementById('text');
+let append1 = document.createElement('p');
+append1.textContent = 'This is a new paragraph.';
+contain.prepend(append1);
+let append2 = document.createElement('p');
+append2.textContent = 'This is another new paragraph.';
+contain.prepend(append2);
+
+}
+example();
+
+
+    </script>
+    
+
+</body>
+</html>

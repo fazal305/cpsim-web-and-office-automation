@@ -1,0 +1,25 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    justify-content: end;
+    align-items: center;
+    height: 200px;
+    background-color: lightgray;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+.child {
+    height: 100px;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: lightblue;
+    padding: 10px;
+}

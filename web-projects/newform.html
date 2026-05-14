@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beautiful HTML Form</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; padding: 40px;">
+
+    <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 100%; max-width: 400px;">
+        
+        <header style="border-bottom: 2px solid #eee; margin-bottom: 20px; padding-bottom: 10px;">
+            <strong style="font-size: 24px; color: #333;">My Modern Form</strong><br>
+            <small style="color: #777;">Please fill out the details below</small>
+        </header>
+
+        <form action="">
+
+            <div style="margin-bottom: 15px;">
+                <label for="name" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" 
+                       style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="password" style="display: block; margin-bottom: 5px; font-weight: bold; color: #555;">Password</label>
+                <input type="password" name="password" id="password" placeholder="••••••••" 
+                       style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <span style="display: block; margin-bottom: 8px; font-weight: bold; color: #555;">Gender</span>
+                <label style="margin-right: 15px; cursor: pointer;">
+                    <input type="radio" name="gender" id="male"> Male
+                </label>
+                <label style="cursor: pointer;">
+                    <input type="radio" name="gender" id="female"> Female
+                </label>
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <label style="cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" name="vehicle" id="car"> 
+                    <span style="font-size: 14px; color: #555;">I have a car</span>
+                </label>
+            </div>
+
+            <input type="submit" value="Submit Form" 
+                   style="width: 100%; background-color: #4CAF50; color: white; padding: 12px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; font-weight: bold;">
+        </form>
+
+        <footer style="margin-top: 25px; font-size: 12px; color: #aaa; text-align: center;">
+            <cite>Designed with pure inline HTML</cite>
+        </footer>
+    </div>
+
+</body>
+</html>

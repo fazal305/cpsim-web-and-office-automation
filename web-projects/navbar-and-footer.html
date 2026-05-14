@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+        nav,
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .main-content {
+            display: flex;
+            min-height: 80vh;
+        }
+        .left-side,
+        .right-side {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .mainContent {
+            flex: 2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .main-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2>This is navbar</h2>
+    </nav>
+    <div class="main-content">
+        <div class="left-side">
+            <h1>This is aside</h1>
+        </div>
+        <div class="mainContent">
+            <h1>Main content</h1>
+        </div>
+        <div class="right-side">
+            <h1>This is right side</h1>
+        </div>
+    </div>
+    <footer>
+        <p>copyRight @ 2026</p>
+    </footer>
+</body>
+
+</html>

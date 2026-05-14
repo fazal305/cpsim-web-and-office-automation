@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: #1f2937;
+    color: #111827;
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.app-layout {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    background: #f9fafb;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dice-face {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 18px;
+    border: 4px solid #374151;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background: #111827;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    visibility: hidden;
+}
+
+
+.coin-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.coin {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    border: 6px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.heads {
+    background: gold;
+}
+
+.tails {
+    background: silver;
+    color: #1f2937;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9ca3af;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #3b82f6;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+.reset-button {
+    background: #ef4444;
+}
+
+.reset-button:hover {
+    background: #dc2626;
+}
+
+.results {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.history-section h3 {
+    text-align: center;
+}
+
+.history-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.history-pill {
+    background: #dbeafe;
+    color: #1e3a8a;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.stats {
+    background: #eef2ff;
+    padding: 15px;
+    border-radius: 14px;
+}
+
+.stats p {
+    margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+    .app-layout {
+        flex-direction: column;
+    }
+}

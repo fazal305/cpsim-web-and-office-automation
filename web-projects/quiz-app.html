@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="quiz-styles.css">
+</head>
+
+<body>
+
+    <main class="app-container">
+
+        <header class="quiz-header">
+            <h1>General Knowledge Quiz</h1>
+            <p>Can you score 5/5?</p>
+        </header>
+
+        <section class="quiz-card" id="quizCard">
+
+            <p class="question-number" id="questionNumber">Question 1 of 5</p>
+
+            <div class="progress-track">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <h2 id="questionText">Question text appears here</h2>
+
+            <div class="options-box" id="optionsBox"></div>
+
+            <button class="next-btn" id="nextBtn" onclick="nextQuestion()">Next</button>
+
+        </section>
+
+        <section class="result-card" id="resultCard">
+
+            <div class="result-emoji">🏆</div>
+
+            <h2 id="scoreText">You scored 0 out of 5!</h2>
+
+            <p id="resultMessage">Result message appears here.</p>
+
+            <button class="play-again-btn" onclick="resetQuiz()">Play Again</button>
+
+        </section>
+
+    </main>
+
+    <script src="quiz-logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: #ffffff;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.tagline {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* BUTTON */
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #34495e;
+}
+
+/* SECTIONS */
+section {
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* SKILLS */
+.skills ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 20px;
+}

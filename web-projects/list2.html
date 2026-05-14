@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List Styling</title>
+    <style>
+       
+        ul {
+            list-style-type: square;       
+            list-style-position: inside;  
+            padding-left: 20px;
+            background-color: #f9f9f9;
+        }
+
+      
+        ol {
+          
+            list-style: upper-roman outside none; 
+            padding-left: 40px;
+            background-color: #e0f7fa;
+        }
+
+       
+        li {
+            margin-bottom: 10px;
+            background-color: lightgray;
+            padding: 10px;               
+            color: black;
+            border-left: 5px solid #333;   
+        }
+
+       
+        .no-bullets {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Unordered List (Square, Inside)</h3>
+    <ul>
+        <li>Abdul</li>
+        <li>Ibrahim</li>
+        <li>Danish</li>
+    </ul>
+
+    <h3>Ordered List (Upper-Roman, Outside)</h3>
+    <ol>
+        <li>Abdul</li>
+        <li>Ibrahim</li>
+        <li>Danish</li>
+    </ol>
+
+    <h3>List with No Markers</h3>
+    <ul class="no-bullets">
+        <li>No Bullet 1</li>
+        <li>No Bullet 2</li>
+    </ul>
+
+</body>
+</html>

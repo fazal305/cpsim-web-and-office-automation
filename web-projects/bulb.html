@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { text-align: center; font-family: sans-serif; padding-top: 50px; }
+  img { width: 200px; display: block; margin: 0 auto 20px; }
+  button { padding: 10px 20px; font-size: 16px; cursor: pointer; margin: 5px; }
+</style>
+</head>
+<body>
+
+
+  <img id="myBulb" src="C:\Users\student\Desktop\Fazal\CPSIM-main\HTML,CSS\bulb off.jpg" alt="Bulb Image">
+
+  <div>
+    <button onclick="changeBulb('on')">Turn On</button>
+    <button onclick="changeBulb('off')">Turn Off</button>
+  </div>
+
+  <script>
+    function changeBulb(state) {
+      const bulb = document.getElementById('myBulb');
+      
+      if (state === 'on') {
+        bulb.src = 'C:\Users\student\Desktop\Fazal\CPSIM-main\HTML,CSS\bulb on.jpg';
+      } else {
+        bulb.src = 'C:\Users\student\Desktop\Fazal\CPSIM-main\HTML,CSS\bulb off.jpg';
+      }
+    }
+  </script>
+
+</body>
+</html>

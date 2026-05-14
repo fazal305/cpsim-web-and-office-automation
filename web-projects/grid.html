@@ -1,0 +1,131 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tracks & Alignment</title>
+    <style>
+        .container {
+            display: grid;
+            
+   
+            grid-template-columns: repeat(3, 1fr); 
+            
+            
+
+            
+            grid-template-rows: 80px 150px; 
+            
+         
+            height: 500px; 
+            border: 2px dashed white;
+            place-content: center center; 
+            background-color: rebeccapurple;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .child {
+            background-color: aqua;
+            border: 1px solid wheat;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+    </div>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);  
+            gap: 10px;
+            font-size: medium;
+            font-optical-sizing: auto;
+        
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightyellow;
+            border: 0capsule;   
+            border-color: aqua;
+            grid-template-areas: 
+            "grid-item1 grid-item1 grid-item2"
+            "grid-item3 grid-item4 grid-item4";
+        }
+        .container div {
+            background-color: lightgray;
+            padding: 20px;
+            text-align: center;
+            font-size: medium;
+            fontcolor: darkblue;
+        }
+        .item1 {
+            grid-column: 1 / 3;
+            grid-area: 1 / 1 / 2 / 3;
+        }
+        .item2 {
+            grid-column: 3 / 4;
+            grid-area: 1 / 3 / 2 / 4;   
+        }
+        .item3 {
+            grid-column: 1 / 2;
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .item4 {
+            grid-column: 2 / 4;
+            grid-area: 2 / 2 / 3 / 4;   
+        }
+        
+    </style>
+    <h1>Grid Layout</h1>
+    <p>This is a simple grid layout example.</p>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+    </div>
+</head>
+<body>
+    
+</body>
+</html> 
+>>>>>>> 6ac56a29cb87421dea06b22e5488cfbf75e6fe6c

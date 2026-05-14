@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dice & Coin Simulator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dice-coin-styles.css">
+</head>
+<body>
+
+    <div class="page-container">
+
+        <h1>Dice & Coin Simulator</h1>
+
+        <div class="app-layout">
+
+            <section class="card">
+                <h2>🎲 Dice Roller</h2>
+
+                <div class="dice-container">
+                    <div class="dice-face" id="diceFace">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <label for="diceCount">Choose Dice:</label>
+
+                    <select id="diceCount">
+                        <option value="1">1 Dice</option>
+                        <option value="2">2 Dice</option>
+                        <option value="3">3 Dice</option>
+                    </select>
+
+                    <button onclick="rollDice()">Roll Dice</button>
+                </div>
+
+                <div class="results">
+                    <p id="diceResults">Results: -</p>
+                    <p id="diceTotal">Total: 0</p>
+                </div>
+
+                <div class="history-section">
+                    <h3>Last 5 Rolls</h3>
+                    <div id="rollHistory" class="history-list"></div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>🪙 Coin Flipper</h2>
+
+                <div class="coin-container">
+                    <div class="coin heads" id="coin">
+                        H
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button onclick="flipCoin()">Flip Coin</button>
+                </div>
+
+                <div class="results">
+                    <p id="coinResult">Heads!</p>
+                </div>
+
+                <div class="stats">
+                    <p>Total Flips: <span id="totalFlips">0</span></p>
+                    <p>Heads Count: <span id="headsCount">0</span></p>
+                    <p>Tails Count: <span id="tailsCount">0</span></p>
+                    <p>Heads Percentage: <span id="headsPercentage">0%</span></p>
+                </div>
+
+                <div class="controls">
+                    <button class="reset-button" onclick="resetStats()">
+                        Reset Stats
+                    </button>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="dice-coin-logic.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Showcase</title>
+    <!-- The line below links the CSS file named styling.css to this HTML file -->
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Ultimate CSS Showcase</h1>
+        <p>A beautiful demonstration of Borders, Box Models, Outlines, and Typography.</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- SECTION 1: BORDERS & BOX MODEL -->
+        <section class="card border-box-section">
+            <h2>Box Model & Borders</h2>
+            
+            <div class="box-model-demo">
+                <p><strong>Box Model, Height & Width:</strong> This box has a fixed width, padding, and a specific border. Notice how everything fits perfectly because of <code>box-sizing: border-box;</code>!</p>
+            </div>
+
+            <div class="border-individual">
+                <p><strong>Individual Border Sides:</strong> This box uses different styles for the top, right, bottom, and left borders.</p>
+            </div>
+
+            <div class="border-shorthand">
+                <p><strong>Shorthand & Rounded Borders:</strong> This box uses the border shorthand property and heavily rounded corners.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: MARGINS & COLLAPSE -->
+        <section class="card margin-section">
+            <h2>Margins & Padding</h2>
+            <div class="margin-box-1">
+                <p>Margin Bottom: 40px</p>
+            </div>
+            <!-- Margin collapse will happen between these two divs -->
+            <div class="margin-box-2">
+                <p>Margin Top: 30px (Collapsed with 40px above, so the actual gap is 40px, not 70px!)</p>
+            </div>
+        </section>
+
+        <!-- SECTION 3: OUTLINES -->
+        <section class="card outline-section">
+            <h2>Outlines Demystified</h2>
+            <p>Outlines are drawn outside the border edge and do not take up space in the box model.</p>
+            
+            <div class="outline-demo">
+                <p>This box has a border, an outline, and an <strong>outline offset</strong> to create a floating double-frame effect!</p>
+            </div>
+        </section>
+
+        <!-- SECTION 4: TEXT STYLING -->
+        <section class="card text-section">
+            <h2>Mastering CSS Typography</h2>
+            
+            <p class="text-color-align">This text demonstrates custom text color and center alignment. It feels balanced and easy to read.</p>
+            
+            <p class="text-decorations">This text features custom decorations, including an overline and an underline with a wavy style!</p>
+            
+            <p class="text-transform-spacing">This text uses uppercase transformation and generous letter spacing for a modern, clean, and spacious look.</p>
+            
+            <p class="text-shadow-demo">Glow Effect</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+body {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.example {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.serif { font-family: "Times New Roman", Times, serif; }
+.sans-serif { font-family: Arial, Helvetica, sans-serif; }
+.monospace { font-family: "Courier New", Courier, monospace; }
+
+/* 2. Font Size */
+.size-px { font-size: 20px; }
+.size-rem { font-size: 1.5rem; }
+
+/* 3. Font Weight */
+.weight-light { font-weight: 100; }
+.weight-bold { font-weight: bold; }
+
+/* 4. Font Style */
+.style-italic { font-style: italic; }
+.style-oblique { font-style: oblique; }
+
+/* 5. Text Decoration */
+.decoration-underline { text-decoration: underline; }
+.no-decoration { text-decoration: none; color: blue; }
+
+/* 6. Font Shorthand 
+   Order: style | weight | size/line-height | family 
+*/
+.font-shorthand {
+    font: italic bold 18px/30px Georgia, serif;
+}

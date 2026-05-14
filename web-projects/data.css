@@ -1,0 +1,56 @@
+
+
+
+.main-title {
+    color: MidnightBlue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+.hex-example {
+    background-color: #f4f4f4; 
+    color: #333333;           
+}
+
+
+.rgba-example {
+   
+    background-color: rgba(52, 152, 219, 0.8); 
+    color: rgb(255, 255, 255); 
+}
+
+
+.hsl-border-example {
+    background-color: hsl(120, 30%, 95%); /* HSL Background */
+    border: 5px solid hsl(120, 100%, 25%); /* HSL Border Color */
+}
+
+
+.image-bg {
+    background-image: url('https://via.placeholder.com/800x400');
+    background-size: cover;
+    color: white;
+    padding: 0; 
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* RGBA for overlay transparency */
+    padding: 20px;
+}
+
+
+.global-opacity {
+    background-color: #e74c3c;
+    opacity: 0.4;
+}
+
+
+.card {
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
