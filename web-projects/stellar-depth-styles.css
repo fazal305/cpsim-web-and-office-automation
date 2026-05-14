@@ -1,0 +1,44 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Parallax Containers */
+.parallax-hero, .parallax-footer {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#hero-layer {
+    background-image: url('khaybar.jfif');
+}
+
+#footer-layer {
+    background-image: url('GtwatgaW4AA_kJJ.jfif');
+}
+
+/* Floating Text Style */
+.hero-text h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Normal Scrolling Content */
+.info-block {
+    padding: 100px 10%;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.8;
+}

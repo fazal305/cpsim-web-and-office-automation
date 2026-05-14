@@ -1,0 +1,74 @@
+<html lang="en">
+head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: purple;
+    }
+
+    nav {
+        background-color: dodgerblue;
+    }
+
+    .main-content {
+        width: 100%;
+        background-color: gray;
+        height: 800px;
+    }
+
+    .left-side {
+        background-color: green;
+        height: 600px;
+        width: 20%;
+        float: left;
+    }
+
+    .mainContent {
+        background-color: black;
+        width: 60%;
+        height: 600px;
+        float: left;
+    }
+
+    .mainContent h1 {
+        color: white;
+        text-align: center;
+    }
+
+    footer {
+        background-color: lightgray;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Website header</h1>
+    </header>
+    <nav>
+        <h2>This is navbar</h2>
+    </nav>
+     <div class="main-content"> 
+        <div class="left-side">
+            <h1>This is aside</h1>
+        </div>
+        <div class="mainContent">
+            <h1>Main contetnt</h1>
+        </div>
+        <div class="right-side">
+            <h1>This is right side</h1>
+        </div>
+     </div> 
+        <footer>
+            <p>copyRight@</p>
+        </footer>
+</body>
+
+</html>

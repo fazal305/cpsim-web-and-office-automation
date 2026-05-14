@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dream Vacation Survey</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="survey-styles.css">
+</head>
+<body>
+
+    <div class="page-container">
+
+        <div class="form-card" id="surveyCard">
+
+            <div class="header-section">
+                <h1>Your Dream Vacation</h1>
+                <p>
+                    Tell us about your ideal travel experiences and vacation dreams.
+                </p>
+            </div>
+
+            <form id="vacationSurveyForm">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                    >
+
+                    <small class="error-msg" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="emailAddress">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="emailAddress"
+                        name="emailAddress"
+                        placeholder="Enter your email address"
+                    >
+
+                    <small class="error-msg" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="userAge">Age</label>
+
+                    <input
+                        type="number"
+                        id="userAge"
+                        name="userAge"
+                        placeholder="Enter your age"
+                    >
+
+                    <small class="error-msg" id="ageError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="travelFrequency">
+                        How often do you travel per year?
+                    </label>
+
+                    <select id="travelFrequency" name="travelFrequency">
+                        <option value="Never">Never</option>
+                        <option value="Once">Once</option>
+                        <option value="2-5 times">2–5 times</option>
+                        <option value="6+ times">6+ times</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Travel Style</label>
+
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="radio" name="travelStyle" value="Solo Adventure">
+                            Solo Adventure
+                        </label>
+
+                        <label class="option-label">
+                            <input type="radio" name="travelStyle" value="Family Trip">
+                            Family Trip
+                        </label>
+
+                        <label class="option-label">
+                            <input type="radio" name="travelStyle" value="Romantic Getaway">
+                            Romantic Getaway
+                        </label>
+
+                        <label class="option-label">
+                            <input type="radio" name="travelStyle" value="Group Tour">
+                            Group Tour
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Favorite Travel Activities</label>
+
+                    <div class="option-group">
+                        <label class="option-label">
+                            <input type="checkbox" name="activities" value="Beach">
+                            Beach
+                        </label>
+
+                        <label class="option-label">
+                            <input type="checkbox" name="activities" value="Hiking">
+                            Hiking
+                        </label>
+
+                        <label class="option-label">
+                            <input type="checkbox" name="activities" value="Food Tours">
+                            Food Tours
+                        </label>
+
+                        <label class="option-label">
+                            <input type="checkbox" name="activities" value="Museums">
+                            Museums
+                        </label>
+
+                        <label class="option-label">
+                            <input type="checkbox" name="activities" value="Shopping">
+                            Shopping
+                        </label>
+
+                        <label class="option-label">
+                            <input type="checkbox" name="activities" value="Nightlife">
+                            Nightlife
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="travelWishes">
+                        Any extra travel wishes?
+                    </label>
+
+                    <textarea
+                        id="travelWishes"
+                        name="travelWishes"
+                        maxlength="300"
+                        placeholder="Share your dream destinations or travel goals..."
+                    ></textarea>
+
+                    <div class="character-counter">
+                        <span id="charCounter">0 / 300 characters</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send My Answers
+                </button>
+
+            </form>
+        </div>
+
+        <div class="thank-you-card hidden" id="thankYouCard">
+            <h2>Thank You! ✈️🌍</h2>
+
+            <p id="thankYouMessage"></p>
+
+            <p>
+                Your dream vacation ideas sound amazing!
+            </p>
+        </div>
+
+    </div>
+
+    <script src="survey-logic.js"></script>
+
+</body>
+</html>

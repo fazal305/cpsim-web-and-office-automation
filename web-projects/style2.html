@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Styling Practice</title>
+    <style>
+        /* Border Styles */
+        .ex1 {
+            border-style: solid;
+        }
+
+        .ex2 {
+            border-style: dashed;
+        }
+
+        .ex3 {
+            border-style: dotted;
+        }
+
+        .ex4 {
+            border-style: groove;
+        }
+
+        /* Seen in your image */
+        .ex5 {
+            border-style: double;
+        }
+
+        /* Seen in your image */
+
+        /* Paragraph Styling */
+        p {
+            vertical-align: text-top;
+            text-align-last: center;
+            line-height: 2;
+            /* Added for better visibility of alignment */
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        /* Image Alignment */
+        img.c {
+            vertical-align: sub;
+            /* Aligns the image to the subscript position */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="ex1">hello this is my class (Solid)</h1>
+    <h1 class="ex2">hello this is my class (Dashed)</h1>
+    <h1 class="ex3">hello this is my class (Dotted)</h1>
+    <h1 class="ex4">hello this is my class (Groove)</h1>
+    <h1 class="ex5">hello this is my class (Double)</h1>
+
+    <hr>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Distinctio nobis incidunt architect.
+        <img class="c"
+            src="data:image/png;base64,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"
+            width="50" height="50" alt="Sample Image">
+    </p>
+
+</body>
+
+</html>

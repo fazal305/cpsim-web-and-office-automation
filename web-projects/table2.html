@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table Demo</title>
+    <style>
+      
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+       
+        table {
+            border-collapse: collapse;
+            width: 100%;            
+            min-height: 100px;
+        }
+
+    
+        th, td {
+            padding: 15px;             
+            text-align: left;        
+            border-bottom: 1px solid #ddd;
+        }
+
+      
+        td:last-child, th:last-child {
+            text-align: center;
+        }
+
+       
+        tr:hover {
+            background-color: coral;
+            color: white;
+            transition: 0.3s;
+        }
+
+       
+        th {
+            background-color: #f2f2f2;
+            border-top: 2px dotted rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Styled Table</h2>
+    
+   
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Doe</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>Sam </td>
+                    <td>28</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
