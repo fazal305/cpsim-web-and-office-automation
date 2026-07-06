@@ -1,30 +1,28 @@
-letno1 = 10;
-letno2 = 20;
-letno3 = 30;
+const lowRate = 10;
+const mediumRate = 20;
+const highRate = 30;
 
-let consume = prompt("How much did you consume your electricity unit in kWh?");
-consume = Number(consume);
+let consumedUnits = Number(prompt("How many electricity units did you consume in kWh?"));
 
-if (consume <= 80 && consume > 50) {
-document.writeln("consume"+ consume);
-document.writeln("cost per unit"+ no1);
-document.writeln("total cost"+ consume*no1);
-alert(`Your total electricity bill is: ${(consume * no1).toFixed(2)} currency units.`);
+if (Number.isNaN(consumedUnits) || consumedUnits <= 0) {
+    document.writeln("Please enter a valid number of units.");
+} else {
+    let costPerUnit;
+
+    if (consumedUnits <= 80) {
+        costPerUnit = lowRate;
+    } else if (consumedUnits <= 150) {
+        costPerUnit = mediumRate;
+    } else {
+        costPerUnit = highRate;
+    }
+
+    const totalCost = consumedUnits * costPerUnit;
+
+    document.writeln("Consumed units: " + consumedUnits + "<br>");
+    document.writeln("Cost per unit: " + costPerUnit + "<br>");
+    document.writeln("Total cost: " + totalCost.toFixed(2) + "<br>");
+    document.writeln("Thank you for using our electricity bill calculator!");
+
+    alert("Your total electricity bill is: " + totalCost.toFixed(2) + " currency units.");
 }
-
- 
-else if (consume <= 150 && consume > 80) {
-    document.writeln("consume"+ consume);
-    document.writeln("cost per unit"+ no2);
-    document.writeln("total cost"+ consume*no2);
-    alert(`Your total electricity bill is: ${(consume * no2).toFixed(2)} currency units.`);
-}
-
-else if (consume > 150) {
-    document.writeln("consume"+ consume);
-    document.writeln("cost per unit"+ no3);
-    document.writeln("total cost"+ consume*no3);
-    alert(`Your total electricity bill is: ${(consume * no3).toFixed(2)} currency units.`);
-}
-
-document.writeln("Thank you for using our electricity bill calculator!");
